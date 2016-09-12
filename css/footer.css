@@ -1,0 +1,150 @@
+.footer-bar {
+	margin-top: 2%;
+	height: 50px;
+}
+
+.footer-bar ul {
+	border-top: 1px solid #e0e0e0;
+	background-color: #fff;
+	overflow: hidden;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.footer-bar li {
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+
+.footer-bar li a {
+	display: block;
+	color: #808080;
+	padding: 4px 0;
+	font-size: 1rem;
+}
+
+.footer-bar li a:before {
+	content: "";
+	display: block;
+	margin: 0 auto;
+	width: 24px;
+	height: 24px;
+	background: url(../image/icon.png) no-repeat;
+	background-size: 216px 226px;
+}
+
+.footer-bar li.icon-1.active a {
+	color: #f39612;
+}
+
+.footer-bar li.icon-1.active a:before {
+	background-position: 0px -78px;
+}
+
+.footer-bar li.icon-1 a:before {
+	background-position: 0px -102px;
+}
+
+.footer-bar li.icon-2.active a {
+	color: #f39612;
+}
+
+.footer-bar li.icon-2.active a:before {
+	background-position: -24px -78px;
+}
+
+.footer-bar li.icon-2 a:before {
+	background-position: -24px -102px;
+}
+
+.footer-bar li.icon-3.active a {
+	color: #f39612;
+}
+
+.footer-bar li.icon-3.active a:before {
+	background-position: -48px -78px;
+}
+
+.footer-bar li.icon-3 a:before {
+	background-position: -48px -102px;
+}
+
+.footer-bar li.icon-4.active a {
+	color: #f39612;
+}
+
+.footer-bar li.icon-4.active a:before {
+	background-position: -72px -78px;
+}
+
+.footer-bar li.icon-4 a:before {
+	background-position: -72px -102px;
+}
+
+.footer-bar li.icon-5.active a {
+	color: #f39612;
+}
+
+.footer-bar li.icon-5.active a:before {
+	background-position: -96px -78px;
+}
+
+.footer-bar li.icon-5 a:before {
+	background-position: -96px -102px;
+}
+.p-info {
+    margin-top: 10px;
+    background-color: #fff;
+}
+.p-info .nav-bar {
+    overflow: hidden;
+    border-bottom: 1px solid #e0e0e0;
+}
+.p-info .nav-bar li {
+    float: left;
+    width: 50%;
+}
+.p-info .nav-bar a {
+    text-align: center;
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    color: #666666;
+    background-color: #fff;
+    font-size: 1.4rem;
+}
+.p-info .nav-bar a span {
+    position: relative;
+    display: inline-block;
+}
+.p-info .nav-bar li.active a span:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff3f12;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

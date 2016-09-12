@@ -1,0 +1,21 @@
+<section>
+	<form name="from" action="#">
+		<div class="input-group">
+			<input type="text" name="phone" ng-model="phone" placeholder="请输入手机号码">
+
+		</div>
+		<div class="input-group code-bar">
+			<div class="code-input">
+				<input type="text" name="vaildCode" required>
+			</div>
+			<a href="javascript:void(0);" class="code-btn">59s后可重发</a>
+		</div>
+		<div class="input-group password-bar">
+			<input type="password" name="password" ng-model="password" placeholder="请设置密码">
+			<input type="password" name="repassword" ng-model="repassword" placeholder="请再次确认密码">
+		</div>
+		<div class="register-box">
+			<a class="btn-default" ng-click="register()">注册</a>
+		</div>
+	</form>
+</section>

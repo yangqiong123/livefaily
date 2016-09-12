@@ -1,0 +1,21 @@
+<div class="swiper-container">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide"><img src="./image/viphead_1.jpg"/></div>
+		<div class="swiper-slide"><img src="./image/viphead_2.jpg"/></div>
+	</div>
+	<div class="swiper-pagination"></div>
+</div>
+<section class="wrap-box">
+	<ul class="f-list">       		  
+        <li ng-repeat="content in contents">
+			<a ng-href="#/index/info/{{content.id}}">
+				<img ng-src="{{content.img}}" />
+				<h2>{{content.txt}}</h2>
+			</a>
+			<p class="price-info">
+				<span class="d-price">{{content.dPrice | tra}}</span>
+				<span class="o-price">原价：<del>{{content.oPrice | tra}}</del></span>
+			</p>
+	   </li>
+	</ul>
+</section>

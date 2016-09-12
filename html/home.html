@@ -1,0 +1,52 @@
+<div class="search-bar">
+	<a href="#/index/home/search" class="address-btn">北京市</a>
+	<div class="input-group" style="border: none;margin: 0;">
+		<input type="text" placeholder="请输入你想要的商品">
+		<a href="#" class="search-btn"></a>
+	</div>
+</div>
+<div class="swiper-container">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide"><img src="image/lunbo1.jpg"/></div>
+		<div class="swiper-slide"><img src="image/lunbo2.jpg"/></div>
+		<div class="swiper-slide"><img src="image/lunbo3.jpg"/></div>
+		<div class="swiper-slide"><img src="image/lunbo4.jpg"/></div>
+		<div class="swiper-slide"><img src="image/lunbo5.jpg"/></div>
+	</div>
+	<!-- Add Pagination -->
+	<div class="swiper-pagination"></div>
+</div>
+<div class="channel-box">
+	<div>
+		<a class="jcsh" href="#">
+			<img src="./image/channel1.jpg" alt="">
+		</a>
+	</div>
+	<div>
+		<a href="#">
+			<img src="./image/channel2.jpg" alt="">
+		</a>
+		<a href="#">
+			<img src="./image/channel3.jpg" alt="">
+		</a>
+		<a href="#">
+			<img src="./image/channel4.jpg" alt="">
+		</a>
+		<a href="#">
+			<img src="./image/channel5.jpg" alt="">
+		</a>
+	</div>
+</div>
+<div class="sales-box">
+	<h2>
+		<span>特卖专区 Sales</span>
+	</h2>
+	<ul class="topic-list">
+		<li ng-repeat='content in contents'>
+			<a ng-href="#/index/info/{{content.id}}" >
+				<img ng-src="{{content.img}}">
+				<p>{{content.txt}}</p>
+			</a>
+		</li>	 
+	</ul>
+</div>

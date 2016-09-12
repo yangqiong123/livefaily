@@ -1,0 +1,35 @@
+<header class="top-bar">
+	<ul>
+		<li class="list-active" ng-click='show()'>
+			<a href=""><span>全部</span></a>
+		</li>
+		<li>
+			<a class="sortlow" href="#"><span>价格从高到低</span></a>
+		</li>
+		<li>
+			<a class="sortlow" href="#"><span>销量优先</span></a>
+		</li>
+	</ul>
+	<div class="c-info" ng-show='isShow'>
+		<div class="wrap">
+			<a href="#" class="selected">特卖区</a>
+			<a href="#">大家电</a>
+			<a href="#">小家电</a>
+		</div>
+	</div>
+</header>
+
+<section class="wrap-box">
+	<ul class="f-list">
+		<li ng-repeat="content in contents">
+			<a ng-href="#/index/info/{{content.id}}">
+				<img ng-src="{{content.img}}" />
+				<h2>{{content.txt}}</h2>
+			</a>
+			<p class="price-info">
+				<span class="d-price">{{content.dPrice | tra}}</span>
+				<span class="o-price">原价：<del>{{content.oPrice | tra}}</del></span>
+			</p>
+		</li>
+	</ul>
+</section>

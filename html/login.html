@@ -1,0 +1,26 @@
+<section style="margin:10px auto;">
+	<nav class="logo">
+		<img src="./image/logo.png" alt="">
+	</nav>
+	<a href="#/register" class="register-btn" style="color:#f29004;">注册</a>
+	<form name="form">
+		<div class="input-group" style="background: #fff;">
+			<img src="./image/phone.png" style="width: 20px;float:left;padding:8px 4px;">
+			<p style="margin-left: 30px;">
+				<input type="text" name="loginKey" placeholder="请输入账号/手机号" ng-model="username">
+			</p>
+		</div>
+		<div class="input-group" style="background: #fff;">
+			<img src="./image/pwd.png" style="width:20px;float:left;padding:8px 4px;">
+			<p style="margin-left:30px;">
+				<input type="password" name="password" placeholder="请输入密码" ng-model="password">
+			</p>
+		</div>
+		<div class="forget-box">
+			<a href="">忘记密码</a>
+		</div>
+		<div class="login-box">
+			<a class="btn-default" ng-click="login()">登录</a>
+		</div>
+	</form>
+</section>

@@ -1,0 +1,47 @@
+<div>
+	<div class="edit-bar">
+		<span>编辑</span>
+	</div>
+	<ul class="list">
+		<li ng-repeat="goods in goodlistObj.goodlist">
+			<div class="list-items" choose=''><span></span></div>
+			<div class="list-img"><img ng-src="{{goods.picsrc}}"/></div>
+			<div class="list-content">
+				<h2>{{goods.goodinfo}}</h2>
+				<div class='list-price'>
+					<span class="list-nowprice">￥<span>{{goods.nprice}}</span></span>
+					<span class="list-oldprice">
+							原价：<del>¥<span >{{goods.oprice}}</span></del>
+					</span>
+				</div>
+				<input type="number" minnum="0" maxnum="200" class="list-num" value="1">
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="p-car">
+	
+</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

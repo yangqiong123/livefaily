@@ -1,0 +1,117 @@
+<div class="top-wrap">
+	<div class="pic-wrap">
+		<img ng-src="{{imgsrc}}" />		
+	</div> 		 
+	<div class="w-info">
+		<h2>{{winfo}}</h2>
+		<table>
+			<tbody>
+				<tr>	
+                    <td>
+						<span class="d-price nowPrice">
+							¥ <span>{{nowprice}}</span>
+						</span>
+						<span>
+							原价：<del class="oldPrice">¥<span>{{oldprice}}</span></del>
+						</span>
+					</td>
+					<td>{{saled}}</td>
+				</tr>
+				<tr>
+					<td class="showLimitTime"></td>
+					<td>
+						{{salednum}}
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="collection">
+		<a class="share-btn"></a>
+		<a class="collection-icon"></a>
+	</div>
+</div>
+<div class="p-info" infochange=''>
+	<ul class="nav-bar">
+		<li class="active">
+			<a><span>商品详情</span></a>
+		</li>
+		<li>
+			<a><span>用户评价</span></a>
+		</li>
+	</ul>
+	<ul class="comment-box">
+		<!-- 商品详情 -->
+		<li class="d-list">
+			<div ng-repeat="imgsrc in images">
+				<img ng-src="{{imgsrc.img}}"/>
+			</div>
+		</li>		
+		<!-- 用户评价 -->
+		<li class="c-list">
+			<ul>
+			</ul>
+		</li>
+			
+	</ul>	
+</div>
+
+<div class="car-bar">
+	<div class="car-wrap">
+		<a id="buyCar" ng-click="checkout()">
+			<span>{{goodnum}}</span>
+		</a>
+		<ul class="car-list">
+			<li>
+				<a href="" class="add-btn" ng-click="addcar()">加入购物车</a>
+			</li>
+			<li>
+				<a href="" class="buy-btn" >立即购买</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<!--购买弹窗-->
+<div id="sharebox">
+	<div class="share-list">
+		<p>分享到</p>
+		<ul>
+			<li class="s-weixin-friends">
+				<a>
+					微信好友
+				</a>
+			</li>
+			<li class="s-weixin">
+				<a>
+					微信朋友圈
+				</a>
+			</li>
+			<li class="s-xinlang">
+				<a>
+					新浪微博
+				</a>
+			</li>
+		</ul>
+		<a class="s-cancle-btn">取&nbsp;&nbsp;&nbsp;&nbsp;消
+		</a>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
